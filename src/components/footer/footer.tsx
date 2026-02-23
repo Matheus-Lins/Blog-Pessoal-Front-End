@@ -1,3 +1,4 @@
+/* eslint-disable prefer-const */
 import { FacebookLogoIcon, InstagramLogoIcon, LinkedinLogoIcon } from "@phosphor-icons/react"
 
 function Footer() {

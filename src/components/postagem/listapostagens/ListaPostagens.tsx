@@ -1,7 +1,6 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 /* eslint-disable react-hooks/exhaustive-deps */
 import { useContext, useEffect, useState } from "react";
-import { useNavigate } from "react-router-dom";
 import { SyncLoader } from "react-spinners";
 import { AuthContext } from "../../../contexts/AuthContext";
 import type Postagem from "../../../models/Postagem";
@@ -10,21 +9,12 @@ import CardPostagem from "../cardpostagem/CardPostagem";
 
 function ListaPostagens() {
 
-    const navigate = useNavigate();
-
     const [isLoading, setIsLoading] = useState<boolean>(false)
 
     const [postagens, setPostagens] = useState<Postagem[]>([])
 
     const { usuario, handleLogout } = useContext(AuthContext)
     const token = usuario.token
-
-    useEffect(() => {
-        if (token === '') {
-            alert('Você precisa estar logado!')
-            navigate('/')
-        }
-    }, [token])
 
     useEffect(() => {
         buscarPostagens()    

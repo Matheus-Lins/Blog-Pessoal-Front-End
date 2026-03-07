@@ -25,6 +25,7 @@ function App() {
           <div className="min-h-[80vh]">
             <Routes>
               <Route path="/" element={<Login />} />
+              <Route path="/login" element={<Login />} />
               <Route path="/home" element={<Home />} />
               <Route path="/cadastro" element={<Cadastro />} />
               <Route path="/temas" element={<ListaTemas />} />
@@ -34,7 +35,7 @@ function App() {
               <Route path="/postagens" element={<ListaPostagens />} />
               <Route path="/cadastrarpostagem" element={<FormPostagem />} />
               <Route path="/editarpostagem/:id" element={<FormPostagem />} />
-              <Route path="/deletarpostagem/:id" element={<DeletarPostagem />}/>
+              <Route path="/deletarpostagem/:id" element={<DeletarPostagem />} />
               <Route path="/perfil" element={<Perfil />} />
             </Routes>
           </div>

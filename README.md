@@ -1,32 +1,32 @@
 ﻿# Blog Pessoal
 
-Aplicacao web de blog pessoal desenvolvida para oferecer uma experiencia simples de navegacao, autenticacao e gerenciamento de conteudo.
+Aplicação web de blog pessoal desenvolvida para oferecer uma experiência simples de navegação, autenticação e gerenciamento de conteúdo.
 
-O projeto foi construido com foco em organizacao visual, fluxo de uso claro e integracao com API para cadastro, listagem, edicao e exclusao de dados.
+O projeto foi construído com foco em organização visual, fluxo de uso claro e integração com API para cadastro, listagem, edição e exclusão de dados.
 
 ## Sobre o projeto
 
-Este projeto representa o front-end de uma plataforma de blog onde o usuario pode acessar sua conta, visualizar postagens, cadastrar novos temas e administrar o proprio conteudo.
+Este projeto representa o front-end de uma plataforma de blog onde o usuário pode acessar sua conta, visualizar postagens, cadastrar novos temas e administrar o próprio conteúdo.
 
-Mais do que uma interface, ele demonstra a construcao de uma aplicacao completa no lado do cliente, com formularios, rotas, autenticacao e comunicacao com servicos externos.
+Mais do que uma interface, ele demonstra a construção de uma aplicação completa no lado do cliente, com formulários, rotas, autenticação e comunicação com serviços externos.
 
-## O que pode ser feito na aplicacao
+## O que pode ser feito na aplicação
 
-- Entrar na plataforma com autenticacao de usuario
+- Entrar na plataforma com autenticação de usuário
 - Criar uma nova conta
 - Visualizar postagens cadastradas
 - Criar, editar e excluir postagens
 - Criar, editar e excluir temas
-- Acessar a pagina de perfil
-- Receber mensagens visuais de sucesso, erro e carregamento durante as acoes
+- Acessar a página de perfil
+- Receber mensagens visuais de sucesso, erro e carregamento durante as ações
 
 ## Destaques do projeto
 
-- Navegacao organizada entre as principais areas da aplicacao
-- Estrutura baseada em componentes reutilizaveis
-- Integracao com API para operacoes de cadastro, consulta, atualizacao e exclusao
-- Controle de autenticacao para liberar ou restringir o acesso a determinadas telas
-- Feedback visual para melhorar a experiencia do usuario
+- Navegação organizada entre as principais áreas da aplicação
+- Estrutura baseada em componentes reutilizáveis
+- Integração com API para operações de cadastro, consulta, atualização e exclusão
+- Controle de autenticação para liberar ou restringir o acesso a determinadas telas
+- Feedback visual para melhorar a experiência do usuário
 
 ## Tecnologias principais
 
@@ -39,26 +39,26 @@ Mais do que uma interface, ele demonstra a construcao de uma aplicacao completa 
 
 ## Bibliotecas utilizadas
 
-Algumas bibliotecas foram utilizadas para melhorar a experiencia da aplicacao e acelerar o desenvolvimento:
+Algumas bibliotecas foram utilizadas para melhorar a experiência da aplicação e acelerar o desenvolvimento:
 
-- `react-toastify` para notificacoes visuais
+- `react-toastify` para notificações visuais
 - `react-spinners` para loaders e estados de carregamento
-- `reactjs-popup` para modais e interacoes auxiliares
-- `@phosphor-icons/react` para icones
+- `reactjs-popup` para modais e interações auxiliares
+- `@phosphor-icons/react` para ícones
 
 ## O que este projeto demonstra
 
-Para avaliadores, recrutadores e pessoas nao tecnicas, este projeto mostra principalmente:
+Para avaliadores, recrutadores e pessoas não técnicas, este projeto mostra principalmente:
 
 - Capacidade de transformar requisitos em uma interface funcional
-- Organizacao de uma aplicacao front-end em paginas, componentes e servicos
-- Integracao com back-end real
-- Preocupacao com fluxo do usuario e feedback visual
-- Estruturacao de um CRUD completo com autenticacao
+- Organização de uma aplicação front-end em páginas, componentes e serviços
+- Integração com back-end real
+- Preocupação com fluxo do usuário e feedback visual
+- Estruturação de um CRUD completo com autenticação
 
 ## Como executar o projeto
 
-1. Instale as dependencias:
+1. Instale as dependências:
 
 ```bash
 npm install
@@ -76,7 +76,7 @@ VITE_API_URL=http://localhost:8080
 npm run dev
 ```
 
-4. Para gerar a versao de producao:
+4. Para gerar a versão de producão:
 
 ```bash
 npm run build
@@ -85,9 +85,9 @@ npm run build
 ## Scripts disponiveis
 
 - `npm run dev` para desenvolvimento local
-- `npm run build` para gerar a build de producao
+- `npm run build` para gerar a build de producão
 - `npm run preview` para visualizar a build localmente
-- `npm run lint` para analise estatica do codigo
+- `npm run lint` para análise estática do codigo
 
 ## Estrutura geral
 

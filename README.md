@@ -1,73 +1,106 @@
-# React + TypeScript + Vite
+﻿# Blog Pessoal
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Aplicacao web de blog pessoal desenvolvida para oferecer uma experiencia simples de navegacao, autenticacao e gerenciamento de conteudo.
 
-Currently, two official plugins are available:
+O projeto foi construido com foco em organizacao visual, fluxo de uso claro e integracao com API para cadastro, listagem, edicao e exclusao de dados.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Sobre o projeto
 
-## React Compiler
+Este projeto representa o front-end de uma plataforma de blog onde o usuario pode acessar sua conta, visualizar postagens, cadastrar novos temas e administrar o proprio conteudo.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Mais do que uma interface, ele demonstra a construcao de uma aplicacao completa no lado do cliente, com formularios, rotas, autenticacao e comunicacao com servicos externos.
 
-## Expanding the ESLint configuration
+## O que pode ser feito na aplicacao
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- Entrar na plataforma com autenticacao de usuario
+- Criar uma nova conta
+- Visualizar postagens cadastradas
+- Criar, editar e excluir postagens
+- Criar, editar e excluir temas
+- Acessar a pagina de perfil
+- Receber mensagens visuais de sucesso, erro e carregamento durante as acoes
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+## Destaques do projeto
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+- Navegacao organizada entre as principais areas da aplicacao
+- Estrutura baseada em componentes reutilizaveis
+- Integracao com API para operacoes de cadastro, consulta, atualizacao e exclusao
+- Controle de autenticacao para liberar ou restringir o acesso a determinadas telas
+- Feedback visual para melhorar a experiencia do usuario
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+## Tecnologias principais
+
+- React
+- TypeScript
+- Vite
+- Tailwind CSS
+- React Router DOM
+- Axios
+
+## Bibliotecas utilizadas
+
+Algumas bibliotecas foram utilizadas para melhorar a experiencia da aplicacao e acelerar o desenvolvimento:
+
+- `react-toastify` para notificacoes visuais
+- `react-spinners` para loaders e estados de carregamento
+- `reactjs-popup` para modais e interacoes auxiliares
+- `@phosphor-icons/react` para icones
+
+## O que este projeto demonstra
+
+Para avaliadores, recrutadores e pessoas nao tecnicas, este projeto mostra principalmente:
+
+- Capacidade de transformar requisitos em uma interface funcional
+- Organizacao de uma aplicacao front-end em paginas, componentes e servicos
+- Integracao com back-end real
+- Preocupacao com fluxo do usuario e feedback visual
+- Estruturacao de um CRUD completo com autenticacao
+
+## Como executar o projeto
+
+1. Instale as dependencias:
+
+```bash
+npm install
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+2. Crie um arquivo `.env` na raiz com a URL da API:
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```env
+VITE_API_URL=http://localhost:8080
 ```
+
+3. Inicie o ambiente de desenvolvimento:
+
+```bash
+npm run dev
+```
+
+4. Para gerar a versao de producao:
+
+```bash
+npm run build
+```
+
+## Scripts disponiveis
+
+- `npm run dev` para desenvolvimento local
+- `npm run build` para gerar a build de producao
+- `npm run preview` para visualizar a build localmente
+- `npm run lint` para analise estatica do codigo
+
+## Estrutura geral
+
+```text
+src/
+  components/
+  contexts/
+  models/
+  pages/
+  services/
+  utils/
+```
+
+## Autor
+
+Desenvolvido por Matheus Lins.
